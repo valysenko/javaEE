@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+
+	
+	<bean id="helloBean" class="com.lysenko.HelloWorld">
+		<property name="name" value="Vlad" />
+	</bean>
+	
+	<bean id="cat" class="com.lysenko.beans.Cat">
+		<constructor-arg value = "Tom"/>
+		<constructor-arg value = "3"/>
+	</bean>
+	
+	<bean id="dog" class="com.lysenko.beans.Dog">
+		<property name="name" value="Rex" />
+		<property name="age" value="6" />
+	</bean>
+	
+	<bean id="cleanService" class="com.lysenko.beans.CleanService">
+		<property name="animal" ref="cat" />
+	</bean>
+
+	<bean id="feedService" class="com.lysenko.beans.EatService">
+		<property name="animal" ref="dog" />
+		<property name="food">
+			<list>
+				<value>meat</value>
+				<value>sausages</value>
+			</list>
+		</property>
+
+	</bean>
+
+</beans>

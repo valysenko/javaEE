@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class Product {
     @Id
     @GeneratedValue
-    @Column(name = "ID")
+    @Column(name = "id")
     private int id;
     private String name;
 

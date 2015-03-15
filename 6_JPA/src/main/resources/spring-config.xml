@@ -42,6 +42,9 @@
     <bean id="productService" class="com.lysenko.services.ProductService">
     </bean>
 
+    <bean id="categoryService" class="com.lysenko.services.CategoryService">
+    </bean>
+
 
 
 </beans>

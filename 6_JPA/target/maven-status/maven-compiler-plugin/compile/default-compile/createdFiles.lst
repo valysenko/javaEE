@@ -1,0 +1,6 @@
+com\lysenko\HelloApp.class
+com\lysenko\dao\ProductDAOInterface.class
+com\lysenko\entities\Product.class
+com\lysenko\services\ProductService.class
+com\lysenko\services\ProductServiceInterface.class
+com\lysenko\dao\ProductDAO.class

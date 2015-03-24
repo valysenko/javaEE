@@ -20,4 +20,8 @@ public class ProductService implements ProductServiceInterface{
         return product;
     }
 
+    public Product getProduct(int id) {
+        return productDAO.getProduct(id);
+    }
+
 }

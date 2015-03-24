@@ -1,5 +1,6 @@
 package com.lysenko.dao;
 
+import com.googlecode.ehcache.annotations.Cacheable;
 import com.lysenko.entities.Product;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,6 +26,7 @@ public class ProductDAO implements ProductDAOInterface   {
     }
 
     @Override
+    @Cacheable(cacheName = "studentsCache")
     public Product getProduct(int id) {
         return em.find(Product.class,id);
     }

@@ -7,4 +7,5 @@ import com.lysenko.entities.Product;
  */
 public interface ProductServiceInterface {
     public Product addProduct(Product product);
+    public Product getProduct(int id);
 }

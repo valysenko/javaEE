@@ -10,8 +10,10 @@ public class HelloApp {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
         ProductServiceInterface productService = (ProductServiceInterface) context.getBean("productService");
-        Product pd = new Product();
-        pd.setName("phone");
-        productService.addProduct(pd);
+        productService.getProduct(1);
+        productService.getProduct(1);
+//        Product pd = new Product();
+//        pd.setName("phone");
+//        productService.addProduct(pd);
     }
 }
